@@ -2,6 +2,6 @@ configserver: true
 
 eureka:
   instance:
-    leaseRenewalIntervalInSeconds: 10
+    leaseRenewalIntervalInSeconds: 100
     metadataMap:
       instanceId: ${vcap.application.instance_id:${spring.application.name}:${server.port:8080}}
